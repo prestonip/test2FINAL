@@ -49,3 +49,5 @@ S' -> YOINKY <stmt> SPLOINKY
 '''
 
 This grammar conforms to the rules of an LL grammar. There is no lefthand recursion, and no rule ever calls itself.
+
+Also, * and + are swapped in the syntax rules. The two tokens retian their conventional meanings (multiplication and addition, respectively), and thusly break the PEMDAS precedence rule.
