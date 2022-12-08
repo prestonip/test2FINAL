@@ -1,0 +1,7 @@
+LEXICAL ERRORS:
+
+1) line 3: "6" is invalid character in that position, only 1, 2, 4, or 8 are allowed there
+2) line 3: "9" is invalid character in that position, only 1, 2, 4, or 8 are allowed there
+3) line 3: "treeeeees" is invalid because it is longer than 8 characters. variable names must be between 6 and 8 characters
+4) line 5: "|" is an illegal character. What "|" typically represents is represented as "or" in my language
+5) line 5: "&" is an illegal character. What "&" typically represents is represented as "and" in my language

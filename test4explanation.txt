@@ -1,0 +1,8 @@
+SYNTAX ERRORS:
+
+1) line 1: YOINKR is evaluated as a valid identifier by the lexer, but is not the program's start token, so the parser does not accept it as correct.
+2) line 2: the left parenteses cannot be placed around the identifier; parentheses can only enclose the statement that sits after the assignment operator, or the boolean stuff for a conditional stmt/loop
+3) line 4: { throws a syntax error because loop declarations must be immediately followed by parentheses containing boolean evaluations
+4) line 4: the empty code block throws another error because it is nested inside of another block, but not immediately followed by a semicolon
+5) line 5: * cannot exist outside of an expression
+6) line 6: the semicolon throws a syntax error because semicolons can only follow code blocks if those code blocks are nested

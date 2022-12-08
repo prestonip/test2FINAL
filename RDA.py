@@ -42,6 +42,11 @@ class Parser:
         else:
             self.syntaxError('start')
 
+    def stmt_list(self):
+        while self.curr_token == 'IDENT' or self.curr_token == 'MAYBE' or self.curr_token == 'LOOP' or self.curr_token == '{':
+            self.stmt()
+
+
     # <stmt> --> <var_stmt> | <select_stmt> | <loop_stmt> | <block>
     def stmt(self):
         match self.curr_token:
@@ -171,7 +176,7 @@ class Parser:
                 if self.curr_token == ';':
                     self.advance()
                 else:
-                    self.syntaxError('block')
+                    self.syntaxError('stmt')
             if self.curr_token == '}':
                 self.advance()
             else:

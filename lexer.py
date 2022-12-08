@@ -74,6 +74,7 @@ class Lexer:
                     elif self.curr_char == '2': tokens.append('INT_LIT_2'), self.advance()
                     elif self.curr_char == '4': tokens.append('INT_LIT_4'), self.advance()
                     elif self.curr_char == '8': tokens.append('INT_LIT_8'), self.advance()
+                    else: return self.lexError(self.curr_char)
                 else: tokens.append('INT_LIT')
 
             # identifier and keyword conditions
